@@ -53,3 +53,10 @@ python analyzer.py data.csv --outdir my_report
 - Column types (numeric / categorical / datetime) are inferred automatically.
 - Works with messy real-world data: handles missing values, mixed types, and datetime strings without extra config.
 - Output is self-contained — the Markdown report references the PNGs by relative path, so the whole `report/` folder can be shared as-is.
+
+## Sample Output
+
+Running `python analyzer.py sample_sales.csv --target revenue` produces:
+- 500 rows analyzed across 9 columns
+- Missing data flagged in 2 columns
+- Correlation heatmap showing revenue vs. quantity/price relationships
